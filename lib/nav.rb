@@ -166,7 +166,7 @@ end
 def _build_terminal(node)
   desc = ''
   if node.key?(:desc)
-    desc = %'<span>#{node[:desc]}</span>'
+    desc = %' <span>#{node[:desc]}</span>'
   end
   %{
     <li class="file"><a href="#{node[:value]}">#{node[:name]}</a>#{desc}</li>
@@ -176,7 +176,7 @@ end
 def _build_subtree(node)
   desc = ''
   if node.key?(:desc)
-    desc = %'<span>#{node[:desc]}</span>'
+    desc = %' <span>#{node[:desc]}</span>'
   end
   %{
   <li class="dir">

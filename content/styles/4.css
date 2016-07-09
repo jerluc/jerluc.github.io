@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic);
+@font-face {
+  font-family: 'blackout-midnight';
+  src: url('../type/Blackout-Midnight-webfont.woff') format('woff');
+}
+body {
+  background-color: #222;
+  color: #222;
+  font: 12px 'Lato', helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#main {
+  background-color: #ddd;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  width: 60em;
+}
+h1 {
+  background-color: #222;
+  color: #fff;
+  font: 12em 'blackout-midnight';
+  margin: 0;
+  padding: 0 24px;
+}
+h2 {
+  font-family: 'Lato';
+  margin: 0;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.section {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  color: #222;
+  font-size: 2em;
+  padding: 1em;
+}
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.section ul li {
+  background-color: #fff;
+  margin-bottom: 2em;
+}
+li > a {
+  text-decoration: none;
+}
+.section p {
+  padding: 0;
+  margin: 0.5em 0;
+}
+.section p.links {
+  margin: 0;
+}
+.section p.links img {
+  width: 24px;
+}
+#projects {
+  border-top: 2em solid #68a;
+}
+#talks {
+  border-top: 2em solid #f40;
+}
+#about {
+  border-top: 2em solid #cf8;
+}
+#about a:link, #about a:visited {
+  color: #6a1;
+  font-weight: bold;
+}
+#about a:hover, #about a:active {
+  color: #8c4;
+}
+
+@media (max-width: 640px) {
+  #main {
+    width: 100%;
+  }
+  h1 {
+    font-size: 8em;
+  }
+  .section p {
+    font-size: 0.75em;
+  }
+}

@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond:400);
+
+body {
+    background: #fff;
+    font: 24px 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0.8em;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+}
+
+h1 {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+h6 {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    margin-top: 1em;
+    text-align: left;
+}
+
+@media(max-width: 320px) {
+  body {
+    font-size: 20px;
+  }
+}

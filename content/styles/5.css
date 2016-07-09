@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic|Droid+Sans+Mono|VT323|Cutive+Mono|Share+Tech+Mono);
+
+body {
+  background-color: #111111;
+  color: #dddddd;
+  font: 16px 'Roboto Mono', monospace;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+* {
+  outline: 0;
+}
+
+main {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 1em;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0;
+}
+
+section {
+  color: #aaaaaa;
+  font-size: 0.75em;
+}
+
+a {
+  user-select: none;
+}
+
+a:link, a:visited {
+  color: #0ca;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul ul {
+  padding-left: 2em;
+}
+
+nav > ul {
+  margin-top: 0.5em;
+  padding: 0;
+}
+
+details {
+  display: inline;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary a {
+  color: #0ca;
+}
+
+summary span {
+  font-size: 0.75em;
+}
+
+summary:before {
+  content: '\25eb';
+  margin-right: 0.5em;
+}
+
+li.file:before {
+  content: '\25e8';
+  margin-right: 0.5em;
+}
+
+li span:before {
+  color: #555555;
+  content: ' : ';
+}
+
+@media(max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    padding: 0.5em;
+  }
+}
+
+@media(max-width: 500px) {
+  nav ul ul {
+    padding-left: 1em;
+  }
+}

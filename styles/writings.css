@@ -24,7 +24,7 @@ img {
 }
 
 h1 {
-  color: #000;
+  color: #111;
   margin: 0;
   margin-left: -4px;
   padding: 0;
@@ -50,11 +50,11 @@ hr {
 }
 
 a:link {
-  color: #0ac;
+  color: #0a9;
 }
 
 a:visited {
-  color: #648;
+  color: #066;
 }
 
 @media(max-width: 480px) {

@@ -87,7 +87,7 @@ li.file:before {
 
 li span:before {
   color: #555555;
-  content: ' : ';
+  content: ': ';
 }
 
 @media(max-width: 320px) {

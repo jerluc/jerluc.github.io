@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 compile '/**/*.html' do
-  layout item[:layout] || '/default.*'
+  layout item[:layout] || '/raw.*'
 end
 
 route '/**/*.{html,md}' do

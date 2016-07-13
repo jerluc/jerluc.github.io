@@ -12,12 +12,10 @@
     <link href="http://jerluc.com" rel="canonical"/>
     <link href="/styles/5.css" rel="stylesheet" type="text/css"/>
   </head>
-  <body itemscope="" itemtype="http://schema.org/Person">
-    <meta itemprop="url" content="http://jerluc.com"/>
-    <meta itemprop="name" content="Jeremy Lucas"/>
+  <body>
     <main>
       <header>
-        <h1 itemprop="alternateName">Jerluc</h1>
+        <h1>Jerluc</h1>
       </header>
       <section>
         Software developer focusing on distributed systems and networks
@@ -179,7 +177,61 @@
     </main>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60767635-1', 'auto');ga('send', 'pageview');</script>
     <script src="/scripts/5.js"></script>
-    <script type="application/ld+json" src="/resource.json"></script>
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "url": "http://jerluc.com",
+  "name": "Jeremy Lucas",
+  "alternateName": "jerluc",
+  "email": "me@jerluc.com",
+  "jobTitle": "Lead Engineer",
+  "telephone": "+13238727038",
+  "image": "http://jerluc.com/images/jeremy.jpg",
+  "potentialAction": [
+    {
+      "@type": "ViewAction",
+      "name": "Visit Website",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "http://jerluc.com/"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "name": "Call Mobile",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+13238727038"
+      }
+    },
+    {
+      "@type": "SendAction",
+      "name": "Send Email",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "mailto:me@jerluc.com"
+      }
+    },
+    {
+      "@type": "ListenAction",
+      "name": "Listen to Music",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://soundcloud.com/jerluc"
+      }
+    },
+    {
+      "@type": "FollowAction",
+      "name": "Follow on Twitter",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://twitter.com/jeremyalucas"
+      }
+    }
+  ]
+}
+    </script>
   </body>
 </html>
 

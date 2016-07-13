@@ -3,8 +3,9 @@
   "@type": "Person",
   "url": "http://jerluc.com",
   "name": "Jeremy Lucas",
+  "alternateName": "jerluc",
   "email": "me@jerluc.com",
-  "jobTitle": "Lead Engineer",
+  "jobTitle": "Software Engineer",
   "telephone": "+13238727038",
   "image": "http://jerluc.com/images/jeremy.jpg",
   "potentialAction": [
@@ -30,14 +31,6 @@
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "mailto:me@jerluc.com"
-      }
-    },
-    {
-      "@type": "ListenAction",
-      "name": "Listen to Music",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://soundcloud.com/jerluc"
       }
     },
     {

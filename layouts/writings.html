@@ -9,6 +9,12 @@
     <link href="/styles/writings.css" rel="stylesheet"/>
   </head>
   <body>
+    <% if item[:status] != 'ready' %>
+    <header style="background-color: #ff0; color: #000; padding: 1em; font-weight: bold;">
+      WARNING: You've somehow managed to stumble upon a WIP document. Feel free to continue
+      reading, but don't come crying to me if you find any mistakes!
+    </header>
+    <% end %>
     <main>
       <h1><%= item[:title] %></h1>
       <h6><%= display_date(item) %></h6>

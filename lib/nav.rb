@@ -46,16 +46,16 @@ def build_tree
             }
           ]
         },
-        {
-          :name => 'biq',
-          :desc => 'Rift-enabled edge compute VM',
-          :value => [
-            {
-              :name => 'Source',
-              :value => 'https://github.com/jerluc/biq'
-            }
-          ]
-        },
+        #{
+        #  :name => 'biq',
+        #  :desc => 'Rift-enabled edge compute VM',
+        #  :value => [
+        #    {
+        #      :name => 'Source',
+        #      :value => 'https://github.com/jerluc/biq'
+        #    }
+        #  ]
+        #},
         {
           :name => 'Pir',
           :desc => 'Multicast LAN discovery library',

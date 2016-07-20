@@ -135,6 +135,36 @@ def build_tree
       :value => writings
     },
     {
+      :name => 'Identities',
+      :value => [
+        {
+          :name => 'GitHub',
+          :desc => 'My code',
+          :value => 'https://github.com/jerluc'
+        },
+        {
+          :name => 'StackOverflow',
+          :desc => 'My questions and answers',
+          :value => 'http://stackoverflow.com/users/544109/jerluc'
+        },
+        {
+          :name => 'Lobste.rs',
+          :desc => 'My discussions and commentary',
+          :value => 'https://lobste.rs/u/jerluc'
+        },
+        {
+          :name => 'HackerRank',
+          :desc => 'My challenges',
+          :value => 'https://www.hackerrank.com/jerluc',
+        },
+        {
+          :name => 'LinkedIn',
+          :desc => 'My career',
+          :value => 'https://www.linkedin.com/in/jeremy-lucas-51004033'
+        }
+      ]
+    },
+    {
       :name => 'Misc',
       :value => [
         {
@@ -166,7 +196,7 @@ end
 def _build_terminal(node)
   desc = ''
   if node.key?(:desc)
-    desc = %' <span>#{node[:desc]}</span>'
+    desc = %' <span class="desc">#{node[:desc]}</span>'
   end
   %{
     <li class="file"><a href="#{node[:value]}">#{node[:name]}</a>#{desc}</li>
@@ -176,7 +206,7 @@ end
 def _build_subtree(node)
   desc = ''
   if node.key?(:desc)
-    desc = %' <span>#{node[:desc]}</span>'
+    desc = %' <span class="desc">#{node[:desc]}</span>'
   end
   %{
   <li class="dir">

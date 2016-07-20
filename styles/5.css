@@ -75,7 +75,7 @@ summary a {
   color: #0ca;
 }
 
-summary span {
+.desc {
   font-size: 0.75em;
 }
 

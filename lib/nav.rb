@@ -1,8 +1,17 @@
+def item_for_url(rel_url)
+  for item in @items
+    if item.identifier.to_s.end_with?(rel_url)
+      return item
+    end
+  end
+  nil
+end
+
 def create_date_listing(items)
   things = []
   items.each do |item|
     year = get_date(item).strftime('%Y')
-    things_for_year = things.detect {|i| i[:name] == year }
+    things_for_year = things.detect { |i| i[:name] == year }
     if things_for_year == nil
       things_for_year = {
         :name => year,
@@ -18,7 +27,7 @@ def create_date_listing(items)
     }
     things_for_year[:value] = things_for_year[:value].sort_by { |item| item[:date] }.reverse
   end
-  things
+  things.sort_by { |thing_for_year| thing_for_year[:name] }.reverse
 end
 
 def build_tree
@@ -126,6 +135,42 @@ def build_tree
               :name => 'Slides',
               :value => 'https://docs.google.com/presentation/d/1DIjxwMXz1SeWu9cjob0UwVY9teffEPUVxeMnC47ybqs/edit?usp='
             }
+          ]
+        }
+      ]
+    },
+    # Fuck Ruby
+    {
+      :name => 'Tutorials',
+      :value => [
+        {
+          :name => 'Introduction to programming',
+          :value => [
+            {
+              :name => '0',
+              :desc => 'A brief preface',
+              :value => '/tutorials/introduction-to-programming/preface.html'
+            },
+            {
+              :name => '1',
+              :desc => 'What is programming?',
+              :value => '/tutorials/introduction-to-programming/what-is-programming.html'
+            },
+            {
+              :name => '2',
+              :desc => 'Using the terminal',
+              :value => '/tutorials/introduction-to-programming/using-the-terminal.html'
+            },
+            #{
+            #  :name => '3',
+            #  :desc => 'Navigating the file system',
+            #  :value => '/tutorials/introduction-to-programming/navigating-the-filesystem.html'
+            #},
+            #{
+            #  :name => '4',
+            #  :desc => 'Introduction to Python',
+            #  :value => '/tutorials/introduction-to-programming/introduction-to-python.html'
+            #},
           ]
         }
       ]

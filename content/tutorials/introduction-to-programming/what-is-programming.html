@@ -1,0 +1,152 @@
+---
+layout: /tutorials.html
+category: Introduction to programming
+title: What is programming?
+date: 20 July 2016
+prev: preface.html
+next: using-the-terminal.html
+status: wip
+---
+<!-- TODO: Not sure if this is needed...
+<p>
+Before we get too deep into what programming is, let's briefly entertain the topic of "why does
+programming exist?" and "how did we get to programming?"
+</p>
+<h2>How did we get to programming?</h2>
+<p>
+Over the decades, we as creatures have evolved to produce tools and technology for simplifying or
+improving our lives. Initially, this may have started with something as simple as learning to use
+certain materials for starting a controlled fire, with which we could cook our food. And then
+eventually, this would progress into learning how to apply physical mechanics to do such things as
+lifting heavy objects, such as with a pulley system, or combining physical mechanics with chemical
+reactions for producing a means of transportation, such as with steam engines and later combustion
+engines.
+</p>
+<p>
+As time went on throughout the history of humanity, our tools and technology would continue to
+progress, building upon previously existing tools to create more complex tools that could do more,
+in less time, at [generally] less cost.
+</p>
+<p>
+In the digital revolution, we continue along the same path of using existing technologies to
+give rise to newer tools. Were it not for the ability to harness electricity as a form of energy and
+the knowledge of the conductivity of materials such as copper wire, it's likely we would not find
+ourselves in this era of miniaturized computers, smartphones, and artifical intelligence.
+</p>
+<p>
+There is a common misconception that computers are smart, and as a seasoned software engineer, I can
+tell you that this is completely false. In fact, though computers might be able to add two numbers
+together faster than you can blink, they are, in fact, incredibly stupid machines that know nothing
+more than you tell it.
+</p>
+-->
+<p>
+Programming is like giving a set of step-by-step instructions to the computer to know
+both what we want to do and how to do it. It is only by combining these step-by-step instructions
+along with the computer's ability to do mathematical operations very quickly that we can achieve
+"smartness" and build software for doing interesting things.
+</p>
+<h2>Step-by-step instructions</h2>
+<p>
+I personally like to think of programming much like the process of giving turn-by-turn navigation
+to someone trying to get from point A to point B:
+</p>
+<p>
+  <img src="/images/navigation_1.jpg" alt="Navigation from point A to point B"/>
+</p>
+<p>
+In this example, if we wanted to give the turn-by-turn instructions from point A to point B
+(assuming each square to be a city block), we could say something like:
+</p>
+<ol>
+  <li>Head east for two blocks</li>
+  <li>Turn left and head north for another two blocks</li>
+  <li>Turn right and head east again for another block</li>
+  <li>Turn left and head north for one last block and you'll arrive at your destination</li>
+</ol>
+<p>
+Sometimes though, it becomes tedious to give very specific instructions such as "walk 8 blocks"
+because sometimes we don't even know precisely how many blocks there are:
+</p>
+<p>
+  <img src="/images/navigation_2.jpg" alt="Navigation from point A to point B (again)"/>
+</p>
+<p>
+In this example, assuming we didn't know exactly how many blocks were after that first left turn, we
+might get creative and say something simpler:
+</p>
+<ol>
+  <li>Head east for two blocks</li>
+  <li>Turn left and head north <i>until you arrive at your destination</i></li>
+</ol>
+<p>
+By using this new way of describing directions, not only have we made the directions more concise,
+but we've also, in a sense, made them more forgiving (we might have otherwise given the wrong
+directions if we tried using an exact number of blocks to travel before stopping).
+</p>
+<details class="exercise">
+  <summary>Exercise #1</summary>
+  <p>Now it's your turn! Using no more than 2 instructions, give the steps you'd list out to someone
+  trying to get from point A to point B (hint: it may be useful to use the intermediary point a):</p>
+  <p>
+    <img src="/images/navigation_3.jpg" alt="Navigation from point A to point B (exercise)"/>
+  </p>
+  <ol id="answers1">
+    <li><span class="answer">Head east until you arrive at point a.</span></li>
+    <li><span class="answer">Turn right and head south until you arrive at your destination</span></li>
+  </ol>
+  <p>
+    <a href="javascript:revealAnswers('answers1')">Click to reveal answers</a>
+  </p>
+</details>
+<h2>Programming languages</h2>
+<p>
+Programming is often done by using a special language, quite suitingly called a <em>programming
+language</em>, to create a set of instructions, called a <em>program</em>. The program is then
+given to the computer which typically will interpret the program's contents to perform whatever
+function is desired.
+</p>
+<p>
+Just as in human languages, a programming language is made up of a vocabulary, grammar, syntax (for
+example, punctuation), and semantics (what actually makes sense in a sentence?). Similarly, in the
+above navigation examples, the programming language can be thought of as:
+</p>
+<dl>
+  <dt>Vocabulary</dt><dd>Turn (verb), left/right (noun), head (verb), north/south/east/west (noun), walk
+    (verb), etc.</dd>
+  <dt>Grammar</dt><dd>Sentences are made up of a verb followed by a noun</dd>
+  <dt>Syntax</dt><dd>English syntax</dd>
+  <dt>Semantics</dt><dd>The verb "turn" should only be followed with a direction ("left" or
+  "right"), etc.</dd>
+</dl>
+<h2>Different kinds of programming languages</h2>
+<p>
+As you might have guessed, not all programming languages are the same. Some use a different
+vocabulary with made-up words. Some use a grammar that looks nothing like English. Some use bizarre
+punctuation all over the place. And some even have semantics whose meaning changes depending on
+context.
+</p>
+<p>
+You might be wondering, "Why would you use one programming language over another?" Generally
+speaking, not all programming languages are built to be able to solve all problems. For example,
+some languages might be easier to use for building a web page, others maybe better suited for
+mathematical computations, etc.
+</p>
+<p>
+Blockly is an example of a programming language that both has a unique language and has a fairly
+specific purpose. Firstly, it is a <em>visual programming language</em> which means the vocabulary
+used in this language is represented with visual components (in this case, blocks). Furthermore, the
+grammar of the language allows a programmer to only put blocks together in certain combinations,
+much like the pieces of a puzzle. Blockly was created specifically for the purpose of teach new
+programmers how to solve problems using a programming language.
+</p>
+<details class="exercise">
+  <summary>Exercise #2</summary>
+  <p>Click <a href="https://blockly-games.appspot.com/maze?lang=en">here</a> to solve the navigation
+  puzzles using the Blockly programming language.</p>
+</details>
+<h4>
+Now that we know what programming is and have a rough idea of how we describe a program to a
+computer, let's continue our journey with our first look at how to get the computer to do something
+for us!
+</h4>

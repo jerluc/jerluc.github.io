@@ -183,6 +183,11 @@ def build_tree
       :name => 'Identities',
       :value => [
         {
+          :name => 'Email',
+          :desc => 'My inbox',
+          :value => 'javascript:window.location=\'mailto:jeremy\' + \'a\' + \'lucas\' + \'@\' + \'gmail.com\''
+        },
+        {
           :name => 'GitHub',
           :desc => 'My code',
           :value => 'https://github.com/jerluc'

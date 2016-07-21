@@ -32,12 +32,17 @@ section {
 }
 
 a {
+  color: #0ca;
   user-select: none;
 }
 
-a:link, a:visited {
-  color: #0ca;
+a:link {
+  color: #0ac;
   text-decoration: none;
+}
+
+a:visited {
+  color: #a0c;
 }
 
 nav ul {
@@ -77,6 +82,22 @@ summary a {
 
 .desc {
   font-size: 0.75em;
+  line-height: 0.5em;
+  vertical-align: 0.11em;
+}
+
+.desc:before {
+  color: #555;
+  content: '[';
+  font-size: 1.5em;
+  vertical-align: -0.11em;
+}
+
+.desc:after {
+  color: #555;
+  content: ']';
+  font-size: 1.5em;
+  vertical-align: -0.11em;
 }
 
 summary:before {
@@ -87,11 +108,6 @@ summary:before {
 li.file:before {
   content: '\25e8';
   margin-right: 0.5em;
-}
-
-li span:before {
-  color: #555555;
-  content: ': ';
 }
 
 @media(max-width: 320px) {

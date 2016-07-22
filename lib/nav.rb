@@ -193,6 +193,11 @@ def build_tree
           :value => 'https://github.com/jerluc'
         },
         {
+          :name => 'Keybase',
+          :desc => 'My identities',
+          :value => 'https://keybase.io/jerluc'
+        },
+        {
           :name => 'StackOverflow',
           :desc => 'My questions and answers',
           :value => 'http://stackoverflow.com/users/544109/jerluc'

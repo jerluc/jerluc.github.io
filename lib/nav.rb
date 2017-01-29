@@ -43,7 +43,7 @@ def build_tree
           :value => [
             {
               :name => 'Source',
-              :value => 'https://github.com/jerluc/rift-exchange'
+              :value => 'https://github.com/jerluc/riftd'
             },
             {
               :name => 'Docs (WIP)',
@@ -86,36 +86,22 @@ def build_tree
           ]
         },
         {
+          :name => 'LOVEr',
+          :desc => 'Distro manager for the LOVE 2D game engine',
+          :value => [
+            {
+              :name => 'Source',
+              :value => 'https://github.com/jerluc/lover'
+            }
+          ]
+        },
+        {
           :name => 'qdpy',
           :desc => 'Quickly distributed Python',
           :value => [
             {
               :name => 'Source',
               :value => 'https://github.com/jerluc/qdpy'
-            }
-          ]
-        },
-        {
-          :name => 'Envy',
-          :desc => 'Project-based dev environments',
-          :value => [
-            {
-              :name => 'Source',
-              :value => 'https://github.com/jerluc/envy'
-            },
-            {
-              :name => 'Docs',
-              :value => 'https://envy.readthedocs.io'
-            }
-          ]
-        },
-        {
-          :name => 'Hermes',
-          :desc => 'Stdout notifications',
-          :value => [
-            {
-              :name => 'Source',
-              :value => 'https://github.com/jerluc/hermes'
             }
           ]
         }

@@ -48,10 +48,6 @@ def build_tree
             {
               :name => 'Docs (WIP)',
               :value => 'http://rift.exchange'
-            },
-            {
-              :name => 'Presentation',
-              :value => 'https://slides.com/jerluc/r'
             }
           ]
         },
@@ -122,7 +118,16 @@ def build_tree
               :value => 'https://docs.google.com/presentation/d/1DIjxwMXz1SeWu9cjob0UwVY9teffEPUVxeMnC47ybqs/edit?usp='
             }
           ]
-        }
+        },
+		{
+		  :name => '"Rift VM"',
+		  :value => [
+			{
+			  :name => 'Slides',
+			  :value => 'https://slides.com/jerluc/r'
+			}
+		  ]
+		}
       ]
     },
     # Fuck Ruby
@@ -158,7 +163,22 @@ def build_tree
             #  :value => '/tutorials/introduction-to-programming/introduction-to-python.html'
             #},
           ]
-        }
+        },
+		{
+		  :name => 'Practical programming',
+		  :value => [
+			{
+			  :name => '0',
+			  :value => 'A brief introduction',
+			  :value => 'http://slides.com/jerluc/practical-programming-a-brief-introduction#/'
+			},
+			{
+			  :name => '1',
+			  :value => 'Manipulating data',
+			  :value => 'http://slides.com/jerluc/practical-programming-manipulating-data#/'
+			}
+		  ]
+		}
       ]
     },
     {

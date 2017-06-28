@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,300);
 
 body {
-  background: #eee;
+  background: #aaa;
   color: #666;
   font: 20px 'Roboto Mono', monospace;
   margin: 0;
@@ -24,7 +24,7 @@ img {
 }
 
 h1 {
-  color: #111;
+  color: #555;
   margin: 0;
   margin-left: -4px;
   padding: 0;
@@ -49,12 +49,12 @@ hr {
   margin-top: 2em;
 }
 
-a:link {
-  color: #0a9;
+a:link{
+  color: #ddd;
 }
 
 a:visited {
-  color: #066;
+  color: #ccc;
 }
 
 #edits {
@@ -67,6 +67,8 @@ a:visited {
 
 #edits summary {
   cursor: pointer;
+  outline: none;
+  user-select: none;
 }
 
 #edits ol {

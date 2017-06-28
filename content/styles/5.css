@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,300);
 
 body {
-  background-color: #111111;
-  color: #dddddd;
+  background-color: #aaa;
+  color: #555;
   font: 16px 'Roboto Mono', monospace;
   font-weight: 300;
   text-transform: lowercase;
@@ -21,28 +21,31 @@ main {
 }
 
 h1 {
+  color: #444;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
 section {
-  color: #aaaaaa;
+  color: #444;
   font-size: 0.75em;
+  font-weight: 400;
 }
 
+
 a {
-  color: #0ca;
+  color: #666;
   user-select: none;
 }
 
 a:link {
-  color: #0ac;
+  color: #ddd;
   text-decoration: none;
 }
 
 a:visited {
-  color: #a0c;
+  color: #ccc;
 }
 
 nav ul {
@@ -73,11 +76,8 @@ summary::-webkit-details-marker {
 }
 
 summary {
+  color: #666;
   cursor: pointer;
-}
-
-summary a {
-  color: #0ca;
 }
 
 .desc {

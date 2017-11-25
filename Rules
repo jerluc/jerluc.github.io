@@ -1,16 +1,15 @@
 #!/usr/bin/env ruby
 
 compile '/**/*.html' do
-  layout item[:layout] || '/raw.*'
+  layout item[:layout] || '/default.html'
+  filter :typogruby
+  filter :html_compress
+  write item.identifier.to_s
 end
 
-route '/**/*.{html,md}' do
-  #if item.identifier =~ '/index.*'
-  #  '/index.html'
-  #else
-  #  item.identifier.without_ext + '/index.html'
-  #end
-  item.identifier.to_s
+compile '/**/*.css' do
+  filter :rainpress
+  write item.identifier.to_s
 end
 
 compile '/**/*' do

@@ -1,0 +1,16 @@
+body {
+  background-color: #ffeb3b;
+  color: #111;
+}
+
+#nav a:link, #nav a:visited {
+  color: #111;
+}
+
+#subnav a:link, #subnav a:visited {
+  color: #111;
+}
+
+main a:link, main a:visited {
+  color: #111;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="charset" content="utf-8"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <meta name="author" content="Jeremy Lucas"/>
+    <% if item[:desc] %>
+    <meta name="description" content="<%= @item[:desc] %>"/>
+    <% end %>
+    <meta name="google-site-verification" content="a14wSkt4IiWfQaXZ9QuSUCwyvmPGVlSDaPJPx65A53Y" />
+    <meta name="theme-color" content="#222"/>
+    <title>
+      JRLC // <%= section(@item) %>
+      <% if subsection(@item) %> / <%= subsection(@item) %><% end %>
+      <% if @item[:title] %> / <%= @item[:title] %><% end %>
+    </title>
+    <link href="http://jerluc.com<%= path_for_item(item) %>" rel="canonical"/>
+    <link href="/styles/main.css" rel="stylesheet"/>
+    <link href="/styles/<%= section(@item) %>.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="root">
+      <nav>
+        <header>
+          <h1>jrlc</h1>
+        </header>
+        <span class="title">//</span>
+        <aside>
+          <ul id="nav">
+            <li><a class="<%= active_class?('index') %>" href="/">index</a></li>
+            <li><a class="<%= active_class?('code') %>" href="/code">code</a></li>
+            <li><a class="<%= active_class?('music') %>" href="/music">music</a></li>
+            <li><a class="<%= active_class?('content') %>" href="/content">content</a></li>
+          </ul>
+          <% if subnav(@item) %>
+        </aside>
+        <span class="title sub">/</span>
+        <aside>
+          <ul id="subnav">
+            <% subnav(@item).each do |subsection| %>
+            <li><a class="subnav <%= active_class?(section(@item), subsection) %>"
+                   href="<%= '/' + section(@item) + '/' + subsection %>"><%= subsection %></a></li>
+            <% end %>
+          </ul>
+          <% end %>
+        </aside>
+      </nav>
+      <main>
+        <%= yield %>
+      </main>
+    </div>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60767635-1', 'auto');ga('send', 'pageview');</script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  background-color: #222;
+  color: #ddd;
+}
+
+#nav a:link, #nav a:visited {
+  color: #fff;
+}
+
+#nav a.active {
+  border-bottom-color: #888;
+}
+
+main a:link, main a:visited {
+  color: #fff;
+}

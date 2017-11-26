@@ -96,8 +96,9 @@ main aside {
 }
 
 main img {
+  display: block;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 60%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -121,5 +122,9 @@ main img {
   nav aside, nav ul {
     display: inline-block;
     width: 100%;
+  }
+
+  main img {
+    max-width: 90%;
   }
 }

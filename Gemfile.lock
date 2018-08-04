@@ -1,0 +1,65 @@
+GEM
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    colored (1.2)
+    concurrent-ruby (1.0.5)
+    cri (2.10.1)
+      colored (~> 1.2)
+    css_press (0.3.2)
+      csspool-st (= 3.1.2)
+      json
+    csspool-st (3.1.2)
+    ddmemoize (1.0.0)
+      ddmetrics (~> 1.0)
+      ref (~> 2.0)
+    ddmetrics (1.0.1)
+    ddplugin (1.0.1)
+    execjs (2.7.0)
+    hamster (3.0.0)
+      concurrent-ruby (~> 1.0)
+    html_press (0.8.2)
+      htmlentities
+      multi_css (>= 0.1.0)
+      multi_js (>= 0.1.0)
+    htmlentities (4.3.4)
+    json (2.1.0)
+    multi_css (0.1.0)
+      css_press
+    multi_js (0.1.0)
+      uglifier (~> 2)
+    nanoc (4.9.3)
+      addressable (~> 2.5)
+      cri (~> 2.8)
+      ddmemoize (~> 1.0)
+      ddmetrics (~> 1.0)
+      ddplugin (~> 1.0)
+      hamster (~> 3.0)
+      parallel (~> 1.12)
+      ref (~> 2.0)
+      slow_enumerator_tools (~> 1.0)
+      tomlrb (~> 1.2)
+    parallel (1.12.1)
+    public_suffix (3.0.1)
+    rainpress (1.0.1)
+    ref (2.0.0)
+    rubypants (0.6.0)
+    slow_enumerator_tools (1.1.0)
+    tomlrb (1.2.7)
+    typogruby (1.0.18)
+      rubypants
+    uglifier (2.7.2)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  html_press
+  nanoc
+  rainpress
+  typogruby
+
+BUNDLED WITH
+   1.16.3

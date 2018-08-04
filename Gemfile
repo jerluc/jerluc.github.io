@@ -1,4 +1,4 @@
-nanoc
-html_press
-rainpress
-typogruby
+gem 'nanoc'
+gem 'html_press'
+gem 'rainpress'
+gem 'typogruby'

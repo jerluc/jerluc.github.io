@@ -94,4 +94,4 @@ deploy:
     kind: git
     remote: git@github.com:jerluc/jerluc.github.io.git
     branch: master
-    force: True
+    forced: True
